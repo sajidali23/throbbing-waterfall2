@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 
 export default function Birthday() {
@@ -22,6 +23,18 @@ export default function Birthday() {
             Celebrate
           </button>
         </div>
+      </div>
+      <div className="p-4 bg-slate-100 rounded-lg flex items-center gap-4">
+          <Image
+            src="/gift.png"
+            alt=""
+            width={24}
+            height={24}
+          />
+          <Link href="/" className="flex flex-col gap-1 text-xs">
+            <span className="text-gray-700 font-semibold">Upcoming Birthday's</span>
+            <span className="text-gray-500">See others 16 have upcoming birthday's</span>
+          </Link>
       </div>
     </div>
   );
