@@ -4,7 +4,7 @@ import RightMenu from "@/app/components/RightMenu";
 
 export default function ProfilePage() {
   return (
-    <div>
+    <div className="flex gap-6 pt-6">
       <div className="hidden xl:block w-[20%]">
         <LeftMenu type="profile"/>
       </div>
